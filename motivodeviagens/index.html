@@ -1,40 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Tipo de Viagem Por Periodo</title>
+  <link rel="icon" href="logo-travelly.png">
+  <title>Travelly - Veja os motivos de viagem</title>
 </head>
 <body>
   <div class="page">
-  <h1>Tipo de Viagem Por Periodo</h1>
-  <div class="form-container">
-    <label for="origin">Aeroporto de Partida (Código IATA):</label>
-    <input type="text" id="origin" placeholder="Código do Aeroporto de Destino" required>
-    
-    <label for="destination">Aeroporto de Destino (Código IATA):</label>
-    <input type="text" id="destination" placeholder="Código do Aeroporto de Destino" required>
-    
-    <label for="departure-date">Data de Partida:</label>
-    <input type="date" id="departure-date" required>
-    
-    <label for="return-date">Data de Retorno:</label>
-    <input type="date" id="return-date" required>
-    
-    <button id="search-btn" onclick="getResult()">Buscar</button>
+
+    <div class="form-container">
+
+      <h1><img id="logo-travelly" src="logo-travelly.png" alt="logo-travelly"></h1>
+
+      <h2>Descubra o motivo de viagens por período</h2>
+
+      <label class="text-input" for="origin">Aeroporto de Partida (Código IATA):</label>
+      <input type="text" id="origin" placeholder="Código do Aeroporto de Destino" required>
+      
+      <label class="text-input" for="destination">Aeroporto de Destino (Código IATA):</label>
+      <input type="text" id="destination" placeholder="Código do Aeroporto de Destino" required>
+      
+      <label class="text-input" for="departure-date">Data de Partida:</label>
+      <input type="date" id="departure-date" required>
+      
+      <label class="text-input" for="return-date">Data de Retorno:</label>
+      <input type="date" id="return-date" required>
+      
+      <button id="search-btn" onclick="getResult()">Pesquisar</button>
+
   </div>
 
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="showDisplay">
-        
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="showDisplay">
+          
+        </div>
+        <button id="close-modal-btn">Fechar</button>
       </div>
-      <button id="close-modal-btn">Fechar</button>
     </div>
   </div>
-</div>
 
   <script src="script.js"></script>
 </body>

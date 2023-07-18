@@ -1,106 +1,80 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: rgb(107, 105, 105);
-  }
 
-  .showDisplay{
-    color: #888;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
   
-  .page {
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    max-width: 600px;
-    background-color: rgb(48, 45, 45);
-    color: white;
-    border: 5px solid wheat;
-    border-radius: 10px;
-  }
+body {
+  background-color: #0f172a;
+}
+
+h2 {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  background-color: #1e293b;
+  color: #fff;
+  width: 50%;
+  margin: 50px auto;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-input {
+  font-weight: 200;
+}
+
+input {
+  width: 50%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  padding: 3px;
+}
+
+#search-btn {
+  background-color: #0f172a;
+  color: #fff;
+  font-weight: 500;
+  margin: 20px 0px;
+  font-size: 1.0rem;
+  width: 40%;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  transition: background 0.5s;
+}
+
+.showDisplay{
+  color: black;
+}
   
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .form-container {
-    margin-bottom: 20px;
-    color: white;
-  }
-  
-  label {
-    display: block;
-    margin-top: 10px;
-  }
-  
-  input[type="text"],
-  input[type="date"],
-  button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 16px;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  #modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-content {
-    background-color: #fefefe;
-    margin: 20% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-  }
-  
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  button {
-    padding: 10px 20px;
-    margin-top: 10px;
-  }
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#search-btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #0f172a;
+  transition: background 0.5s;
+}
   
   @media screen and (max-width: 768px) {
     /* Estilos para telas menores (até 768px) */

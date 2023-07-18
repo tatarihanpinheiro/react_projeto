@@ -1,5 +1,6 @@
 // Obtém a referência do botão que abre o modal
 const openModalBtn = document.getElementById('open-modal-btn');
+console.log(openModalBtn);
 // Obtém a referência do elemento do modal
 const modal = document.getElementById('modal');
 let showDisplayTT = document.querySelector('.showDisplay');
@@ -73,6 +74,7 @@ function getResult() {
         .then(response => response.json())
         .then(data => {
           const { result } = data.data;
+
           console.log(result);
           modal.style.display = 'block';
 
